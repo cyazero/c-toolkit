@@ -1,0 +1,24 @@
+### Maven 构建输出 ###
+target/
+**/target/
+pom.xml.*
+dependency-reduced-pom.xml
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+### 系统文件 ###
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.orig
+
+### 日志文件 ###
+logs/
+*.log
