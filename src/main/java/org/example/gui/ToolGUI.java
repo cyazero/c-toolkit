@@ -225,7 +225,7 @@ public class ToolGUI extends JFrame {
             JTextField textField = new JTextField();
             textField.setPreferredSize(new Dimension(200, 25));
             textField.setMinimumSize(new Dimension(150, 25));
-            textField.setFont(consolasFont); // 输入框使用Consolas
+            textField.setFont(yaheiFont); // 输入框使用yahei
             textField.setToolTipText(paramDesc);
             paramPanel.add(textField, gbc);
 

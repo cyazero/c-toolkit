@@ -10,16 +10,16 @@ import java.util.Map;
 /**
  * Created on 2025/07/25
  */
-@Tool(command = "base64", name = "base64加密", description = "对字符串base64加密", parameters = {"decode:明文", "encode:密文"})
+@Tool(command = "base64", name = "base64编解码", description = "对输入字符串base64编码解码", parameters = {"encode:编码", "decode:解码"})
 public class Base64Tool {
-    @ToolMethod(description = "计算分表位置")
+    @ToolMethod
     public String execute(Map<String, String> parameters) {
         String encode = parameters.get("encode");
         String decode = parameters.get("decode");
         if (encode != null && !encode.isEmpty()) {
-            return decodeFromBase64(encode);
+            return encodeToBase64(encode);
         } else if (decode != null && !decode.isEmpty()) {
-            return encodeToBase64(decode);
+            return decodeFromBase64(decode);
         } else {
             return "错误: 必须提供明文或密文";
         }

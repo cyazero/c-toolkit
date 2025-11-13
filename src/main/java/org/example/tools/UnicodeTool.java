@@ -10,18 +10,18 @@ import java.util.regex.Pattern;
 /**
  * Created on 2025/08/21
  */
-@Tool(command = "Unicode", name = "Unicode加密", description = "对字符串Unicode加密", parameters = {"decode:明文", "encode:密文"})
+@Tool(command = "Unicode", name = "Unicode编解码", description = "对输入字符串Unicode编解码", parameters = {"encode:加密", "decode:解码"})
 public class UnicodeTool {
-    @ToolMethod(description = "计算分表位置")
+    @ToolMethod
     public String execute(Map<String, String> parameters) {
         String encode = parameters.get("encode");
         String decode = parameters.get("decode");
         if (encode != null && !encode.isEmpty()) {
-            return decodeUnicode(encode);
+            return encodeUnicode(encode);
         } else if (decode != null && !decode.isEmpty()) {
-            return encodeUnicode(decode);
+            return decodeUnicode(decode);
         } else {
-            return "错误: 必须提供明文或密文";
+            return "错误: 必须提供字符串";
         }
     }
 

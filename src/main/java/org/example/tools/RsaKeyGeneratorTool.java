@@ -20,7 +20,7 @@ public class RsaKeyGeneratorTool {
 
     private static final int DEFAULT_KEY_SIZE = 2048;
 
-    @ToolMethod(description = "生成RSA秘钥对")
+    @ToolMethod
     public static String execute(Map<String, String> parameters) {
 
         int keySize = DEFAULT_KEY_SIZE;

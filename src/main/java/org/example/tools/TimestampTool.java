@@ -24,7 +24,7 @@ public class TimestampTool {
     private static final DateTimeFormatter FORMATTER =
             DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-    @ToolMethod(description = "时间戳转换")
+    @ToolMethod
     public String execute(Map<String, String> parameters) {
         String date = parameters.get("date");
         String timestamp = parameters.get("timestamp");

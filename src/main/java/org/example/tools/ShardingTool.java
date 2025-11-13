@@ -17,7 +17,7 @@ public class ShardingTool {
 
     private static final int DEFAULT_SHARD_COUNT = 10;
 
-    @ToolMethod(description = "计算分表位置")
+    @ToolMethod
     public String execute(Map<String, String> parameters) {
         String orderId = parameters.get("orderId");
         if (orderId == null || orderId.isEmpty()) {
