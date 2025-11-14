@@ -9,9 +9,9 @@ import java.util.Map;
  */
 @Tool(
         command = "shard",
-        name = "哈希取余分表计算",
-        description = "根据订单号获取hashcode，分表数取余，计算分表位置",
-        parameters = {"orderId:订单号", "shards:分表数量(可选,默认10)"}
+        name = "分片计算(哈希取余)",
+        description = "根据订单号获取hashcode，分片数取余，计算分片位置",
+        parameters = {"orderId:订单号", "shards:分片数量(可选,默认10)"}
 )
 public class ShardingTool {
 
@@ -34,7 +34,7 @@ public class ShardingTool {
         }
 
         int shard = calculateShard(orderId, shards);
-        return "订单 '" + orderId + "' 应分到表: " + shard;
+        return "订单 '" + orderId + "' 应分到片: " + shard;
     }
 
     private int calculateShard(String orderId, int shardCount) {

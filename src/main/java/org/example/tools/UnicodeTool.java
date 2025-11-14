@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 /**
  * Created on 2025/08/21
  */
-@Tool(command = "Unicode", name = "Unicode编解码", description = "对输入字符串Unicode编解码", parameters = {"encode:加密", "decode:解码"})
+@Tool(command = "unicode", name = "Unicode编码解码", description = "对输入字符串Unicode编解码", parameters = {"encode:加密", "decode:解码"})
 public class UnicodeTool {
     @ToolMethod
     public String execute(Map<String, String> parameters) {

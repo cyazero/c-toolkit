@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Created on 2025/07/25
  */
-@Tool(command = "base64", name = "base64编解码", description = "对输入字符串base64编码解码", parameters = {"encode:编码", "decode:解码"})
+@Tool(command = "base64", name = "base64编码解码", description = "对输入字符串base64编码解码", parameters = {"encode:编码", "decode:解码"})
 public class Base64Tool {
     @ToolMethod
     public String execute(Map<String, String> parameters) {
